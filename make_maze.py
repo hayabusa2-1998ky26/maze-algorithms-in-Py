@@ -1,7 +1,11 @@
-size = 31
+size_x = 31
+size_y = 19
 maze = []
-for i in range(size):
-    maze.append(list("0" * size))
-for i in range(size):
-    for j in range(size):
-        maze[i][j] = int(maze[i][j])
+def make_maze():
+    global maze
+    maze = []
+    for i in range(size_y):
+        maze.append(list("0" * size_x))
+    for i in range(size_y):
+        for j in range(size_x):
+            maze[i][j] = int(maze[i][j])
